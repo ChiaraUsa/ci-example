@@ -48,5 +48,8 @@ jobs:
           pip install -r requirements.txt
       - name: Test code
         run: pytest
+      - name: Autoformat
+        run: autopep8 --in-place --aggressive --aggressive utils.py test_utils.py
       - name: Flake
         run: flake8 --exclude env
+
