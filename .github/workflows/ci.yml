@@ -65,9 +65,6 @@ jobs:
       - name: List buckets
         run: aws s3 ls
 
-      - name: Upload files to S3 bucket
-        run: aws s3 cp . s3://bigdatacv/code/ --recursive
-
       - name: Update zappa
         run: |
           python -m venv env          
