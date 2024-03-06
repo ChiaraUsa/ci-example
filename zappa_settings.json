@@ -1,0 +1,13 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "project_name": "ci-example",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-21t393mkm",
+        "keep_warm": false,
+        "apigateway_enabled": false,
+        "manage_roles": false,        
+        "role_name": "LabRole"
+    }
+}
