@@ -8,6 +8,12 @@
         "keep_warm": false,
         "apigateway_enabled": false,
         "manage_roles": false,        
-        "role_name": "LabRole"
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "app.app",
+                "expression": "cron(45 4 * * ? *)"
+            }        
+        ]
     }
 }
