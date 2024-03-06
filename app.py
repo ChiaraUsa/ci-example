@@ -20,6 +20,7 @@ def app(event, context):
 
         # Subir el archivo a S3
         s3.put_object(Body=data, Bucket='tiempocv', Key=f'{date_string}.html')
+        print("Hola")
         
         return {
             'statusCode': 200,
